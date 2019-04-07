@@ -8,6 +8,8 @@ import Call from '@material-ui/icons/Call';
 import Pets from '@material-ui/icons/Pets';
 import SupervisedUserCircle from '@material-ui/icons/SupervisedUserCircle';
 import "./Navbar.css";
+// import { Redirect } from 'react-router-dom';
+
 
 
 const styles = {
@@ -30,17 +32,18 @@ const styles = {
     render() {
       const { classes } = this.props;
       const { value } = this.state;
+      
   
       return (
         <BottomNavigation value={value} onChange={this.handleChange} className={classes.stickToBottom}>
-          <BottomNavigationAction label="Home" value="recents" icon={<Home />} href="/" />
-          <BottomNavigationAction label="Services" value="favorites" icon={<Pets />} href="/services" />
-          <BottomNavigationAction label="About Us" value="nearby" icon={<SupervisedUserCircle />} href="/aboutus" />
-          <BottomNavigationAction label="Contact" value="call" icon={<Call />} href="/contact" />
+          <BottomNavigationAction label="Home" value="recents" icon={<Home />} />
+          <BottomNavigationAction label="Services" value="favorites" icon={<Pets />} />
+          <BottomNavigationAction label="About Us" value="nearby" icon={<SupervisedUserCircle />} />
+          <BottomNavigationAction label="Contact" value="call" icon={<Call />} />
         </BottomNavigation>
       );
     }
-  }
+  } 
   
   LabelBottomNavigation.propTypes = {
     classes: PropTypes.object.isRequired,
