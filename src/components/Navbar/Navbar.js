@@ -12,6 +12,7 @@ import "./Navbar.css";
 
 
 
+
 const styles = {
     stickToBottom: {
         width: '100%',
@@ -27,6 +28,7 @@ const styles = {
   
     handleChange = (event, value) => {
       this.setState({ value });
+      
     };
   
     render() {
@@ -38,8 +40,8 @@ const styles = {
         <BottomNavigation value={value} onChange={this.handleChange} className={classes.stickToBottom}>
           <BottomNavigationAction label="Home" value="recents" icon={<Home />} />
           <BottomNavigationAction label="Services" value="favorites" icon={<Pets />} />
-          <BottomNavigationAction label="About Us" value="nearby" icon={<SupervisedUserCircle />} />
           <BottomNavigationAction label="Contact" value="call" icon={<Call />} />
+          <BottomNavigationAction label="About Us" value="nearby" icon={<SupervisedUserCircle />} />
         </BottomNavigation>
       );
     }

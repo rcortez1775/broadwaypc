@@ -1,0 +1,60 @@
+body {
+    background-image: url("../../images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.intro {
+    position: absolute;
+    text-align: center;
+    bottom: 180px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.title {
+    font-family: 'Rajdhani', sans-serif;
+    color: #ececec;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.addy {
+    font-family: 'Rajdhani', sans-serif; 
+    color: #ececec;
+    font-size: 17px;
+}
+
+.image {
+    width: 375px;
+    margin: auto;
+}
+
+.rotate-center {
+	-webkit-animation: rotate-center 1s ease-in-out 2s both;
+	        animation: rotate-center 1s ease-in-out 2s both;
+}
+
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
