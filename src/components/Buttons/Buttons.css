@@ -1,0 +1,53 @@
+#button {
+    border: 2px solid #31708E;
+    color: #F7F9FB;
+    padding: 5px;
+    font-size: 15px;
+    width: 100px;
+    font-family: 'Rajdhani', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    padding-top: 10px;
+    color: #F7F9FB;
+    margin-top: 55px;
+}
+
+.container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin: auto;
+}
+
+.box {
+    border: 2px solid #F7F9FB;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+@media screen and (max-width:1200px) {
+    .box {
+        width: 220px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .box {
+        width: 220px;
+        margin: 10px;
+    }
+}
