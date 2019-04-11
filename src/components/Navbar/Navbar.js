@@ -18,7 +18,7 @@ const styles = {
         width: '100%',
         position: 'fixed',
         bottom: 0,
-        backgroundColor: '#ffffffa6',
+        backgroundColor: '#F7F9FB',
       },
   };
   

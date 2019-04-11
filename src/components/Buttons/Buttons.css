@@ -1,13 +1,13 @@
 #button {
-    border: 2px solid #31708E;
-    color: #F7F9FB;
     padding: 5px;
     font-size: 15px;
-    width: 100px;
+    width: 120px;
     font-family: 'Rajdhani', sans-serif;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    background-color: transparent; 
+    text-decoration: none;
 }
 
 h2 {
@@ -15,8 +15,11 @@ h2 {
     font-family: 'Rajdhani', sans-serif;
     padding-top: 10px;
     color: #F7F9FB;
-    margin-top: 55px;
+    font-size: 19px;
 }
+
+h2 { transition: all .2s ease-in-out; }
+h2:hover { transform: scale(1.4); }
 
 .container {
     width: 90%;
@@ -26,16 +29,15 @@ h2 {
     justify-content: space-around;
     flex-flow: wrap;
     margin: auto;
+    margin-top: 50px;
 }
 
 .box {
-    border: 2px solid #F7F9FB;
-    width: 220px;
-    height: 220px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     box-sizing: border-box;
-    margin-top: 80px;
-    overflow: hidden;
+    margin-top: 50px;
 }
 
 @media screen and (max-width:1200px) {

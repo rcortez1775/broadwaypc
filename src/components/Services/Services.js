@@ -8,8 +8,9 @@ class Services extends Component {
     render() {
         return(
             <div>
-                <h1 className="title">OUR SERVICES</h1>
+                
                 <Button />
+                
             </div>
         )
     }
