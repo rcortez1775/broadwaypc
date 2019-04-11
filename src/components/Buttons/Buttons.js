@@ -24,7 +24,7 @@ class ScrollDialog extends React.Component {
     return (
         <div className="container">
             <div className="box">
-        <Button id="button" onClick={this.handleClickOpen('paper')}><h2>Price<br></br>List</h2></Button>
+        <Button id="button" onClick={this.handleClickOpen('paper')}><h2 className="category">Price<br></br>List</h2></Button>
         <Dialog
           open={this.state.open}
           onClose={this.handleClose}
@@ -41,7 +41,7 @@ class ScrollDialog extends React.Component {
             </div>
 
             <div className="box">
-         <Button id="button" onClick={this.handleClickOpen('paper')}><h2>Wellness<br></br>Programs</h2></Button>
+         <Button id="button" onClick={this.handleClickOpen('paper')}><h2 className="category">Wellness<br></br>Programs</h2></Button>
         <Dialog
           open={this.state.open}
           onClose={this.handleClose}
@@ -58,7 +58,7 @@ class ScrollDialog extends React.Component {
             </div>
 
             <div className="box">
-         <Button id="button" onClick={this.handleClickOpen('paper')}><h2>Dental<br></br>Care</h2></Button>
+         <Button id="button" onClick={this.handleClickOpen('paper')}><h2 className="category">Dental<br></br>Care</h2></Button>
          <Dialog
           open={this.state.open}
           onClose={this.handleClose}
@@ -75,7 +75,7 @@ class ScrollDialog extends React.Component {
             </div>
 
             <div className="box">
-         <Button id="button" onClick={this.handleClickOpen('paper')}><h2>Vaccinations &<br></br>Microchipping</h2></Button>
+         <Button id="button" onClick={this.handleClickOpen('paper')}><h2 className="category">Vaccinations &<br></br>Microchipping</h2></Button>
          <Dialog
           open={this.state.open}
           onClose={this.handleClose}
@@ -92,25 +92,7 @@ class ScrollDialog extends React.Component {
             </div>
 
             <div className="box">
-         <Button id="button" onClick={this.handleClickOpen('paper')}><h2>Radiology &<br></br>Ultrasound</h2></Button>
-         <Dialog
-          open={this.state.open}
-          onClose={this.handleClose}
-          scroll={this.state.scroll}
-          aria-labelledby="scroll-dialog-title"
-        >
-          <DialogTitle id="scroll-dialog-title">Subscribe</DialogTitle>
-          <DialogContent>
-            <DialogContentText>
-              Cras mattis
-            </DialogContentText>
-          </DialogContent>
-        </Dialog>
-            </div>
-
-
-            <div className="box">
-         <Button id="button" onClick={this.handleClickOpen('paper')}><h2>Internal<br></br>Medicine</h2></Button>
+         <Button id="button" onClick={this.handleClickOpen('paper')}><h2 className="category">Radiology &<br></br>Ultrasound</h2></Button>
          <Dialog
           open={this.state.open}
           onClose={this.handleClose}
@@ -128,7 +110,25 @@ class ScrollDialog extends React.Component {
 
 
             <div className="box">
-         <Button id="button" onClick={this.handleClickOpen('paper')}><h2>Surgical<br></br>Procedures</h2></Button>
+         <Button id="button" onClick={this.handleClickOpen('paper')}><h2 className="category">Internal<br></br>Medicine</h2></Button>
+         <Dialog
+          open={this.state.open}
+          onClose={this.handleClose}
+          scroll={this.state.scroll}
+          aria-labelledby="scroll-dialog-title"
+        >
+          <DialogTitle id="scroll-dialog-title">Subscribe</DialogTitle>
+          <DialogContent>
+            <DialogContentText>
+              Cras mattis
+            </DialogContentText>
+          </DialogContent>
+        </Dialog>
+            </div>
+
+
+            <div className="box">
+         <Button id="button" onClick={this.handleClickOpen('paper')}><h2 className="category">Surgical<br></br>Procedures</h2></Button>
          <Dialog
           open={this.state.open}
           onClose={this.handleClose}
