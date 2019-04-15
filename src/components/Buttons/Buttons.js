@@ -26,12 +26,11 @@ const styles = theme => ({
   transparentBar: {
     backgroundColor: 'transparent !important',
     boxShadow: 'none',
-    paddingTop: '-10px',
+    paddingTop: '80px',
   },
   text: {
     color: '#F7F9FB',
     fontFamily: 'Rajdhani, sans-serif',
-    fontSize: '15px',
     backgroundColor: '#111111bb',
     margin: 'auto',
     marginBottom: '20px',
@@ -45,11 +44,13 @@ const styles = theme => ({
   },
   container: {
     width: '100%',
-    height: 'auto',
+    height: '525px',
+    marginTop: '120px',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'spaceAround',
     flexFlow: 'wrap',
+    overflowY: 'auto',
   },
   price: {
     fontSize: '40px',
@@ -57,7 +58,7 @@ const styles = theme => ({
   dollar: {
     fontSize: '20px',
     top: 0,
-    verticalAlign: '15px',
+    verticalAlign: '11px',
   }
 });
 
@@ -76,7 +77,7 @@ class ScrollableTabsButtonForce extends React.Component {
 
     return (
       <div className={classes.root}>
-        <AppBar position="static" className={classes.transparentBar}>
+        <AppBar position="fixed" className={classes.transparentBar}>
           <Tabs
             value={value}
             onChange={this.handleChange}

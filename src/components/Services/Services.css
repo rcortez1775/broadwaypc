@@ -8,6 +8,7 @@ body {
 .title {
   font-family: 'Rajdhani', sans-serif;
   color: #F7F9FB;
+  position: fixed;
   font-size: 45px;
   font-weight: bold;
   text-align: center;
