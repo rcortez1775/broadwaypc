@@ -10,14 +10,6 @@
     text-decoration: none;
 }
 
-h2 {
-    text-align: center;
-    font-family: 'Rajdhani', sans-serif;
-    padding-top: 10px;
-    color: #e6e6e6;
-    font-size: 15px;
-}
-
 .category { 
     transition: all .2s ease-in-out; 
 }
@@ -26,8 +18,14 @@ h2 {
     transform: scale(1.4);
 }
 
-p {
-    font-family: 'Rajdhani', sans-serif;
-    color: #F7F9FB;
-    font-size: 15px;
+@media screen and (max-width: 1200px) {
+    .text {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .text {
+        width: 40%;
+    }
 }

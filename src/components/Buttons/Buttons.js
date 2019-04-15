@@ -22,19 +22,35 @@ const styles = theme => ({
   root: {
     flexGrow: 1,
     width: '100%',
-   
   },
   transparentBar: {
     backgroundColor: 'transparent !important',
     boxShadow: 'none',
-    paddingTop: '25px',
-    color: '#FFFFFF',
+    paddingTop: '-10px',
   },
   text: {
-    color: '#e6e6e6',
-    width: '90%',
+    color: '#F7F9FB',
+    fontFamily: 'Rajdhani, sans-serif',
+    fontSize: '15px',
+    backgroundColor: '#111111bb',
+    margin: '20px',
+    padding: '20px',
+    width: '180px',
+    height: '180px',
+    textAlign: 'center',
+    boxSizing: 'borderbox',
+  },
+  container: {
+    width: '100%',
+    height: 'auto',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'spaceAround',
+    flexFlow: 'wrap',
     margin: 'auto',
-    marginTop: '10px',
+  },
+  price: {
+    fontSize: '40px',
   },
 });
 
@@ -63,6 +79,7 @@ class ScrollableTabsButtonForce extends React.Component {
             
           >
             <Tab label="Price List" />
+            <Tab label="Spay/Neuter" />
             <Tab label="Wellness Programs" />
             <Tab label="Dental Care" />
             <Tab label="Vaccinations & Microchipping" />
@@ -71,26 +88,72 @@ class ScrollableTabsButtonForce extends React.Component {
             <Tab label="Surgery" />
           </Tabs>
         </AppBar>
-        {value === 0 && <TabContainer><p className={classes.text}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has 
-            survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
-            Letraset sheets containing Lorem Ipsum passages, 
-            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            Why do we use it?</p>
-            <br></br>
-            <p className={classes.text}>
-            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
-            content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum 
-            as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, 
-            sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-            <br></br></TabContainer>}
+        {value === 0 && <TabContainer>
+            <div className={classes.container}>
+             <div className={classes.text}>
+             <h5>Phsyical Exam</h5>
+             <h2 className={classes.price}>$45</h2>
+             </div>
+
+             <div className={classes.text}>
+             <h5>DA2PP | Corona | Bordetella Booster | FVRCP Booster</h5>
+             <h2 className={classes.price}>$19</h2>
+             </div>
+
+             <div className={classes.text}>
+             <h5>PFELV Booster</h5>
+             <h2 className={classes.price}>$22</h2>
+             </div>
+
+             <div className={classes.text}>
+             <h5>Rabies Vaccine</h5>
+             <h2 className={classes.price}>$18</h2>
+             </div>
+
+             <div className={classes.text}>
+             <h5>In-House Blood work</h5>
+             <h2 className={classes.price}>$149</h2>
+             </div>
+
+             <div className={classes.text}>
+             <h5>Radiographs</h5>
+             <h2 className={classes.price}>$100</h2>
+             </div>
+
+             <div className={classes.text}>
+             <h5>Ultrasound</h5>
+             <h2 className={classes.price}>$350</h2>
+             </div>
+
+             <div className={classes.text}>
+             <h5>Nail Trim</h5>
+             <h2 className={classes.price}>$20</h2>
+             </div>
+
+             <div className={classes.text}>
+             <h5>Anal Gland Expression</h5>
+             <h2 className={classes.price}>$15</h2>
+             </div>
+
+             <div className={classes.text}>
+             <h5>Microchip</h5>
+             <h2 className={classes.price}>$30</h2>
+             </div>
+
+             <div className={classes.text}>
+             <h5>Dental</h5>
+             <h2 className={classes.price}>$199</h2>
+             </div>
+
+            </div>
+        </TabContainer>}
         {value === 1 && <TabContainer>Item Two</TabContainer>}
         {value === 2 && <TabContainer>Item Three</TabContainer>}
         {value === 3 && <TabContainer>Item Four</TabContainer>}
         {value === 4 && <TabContainer>Item Five</TabContainer>}
         {value === 5 && <TabContainer>Item Six</TabContainer>}
         {value === 6 && <TabContainer>Item Seven</TabContainer>}
+        {value === 7 && <TabContainer>Item Seven</TabContainer>}
       </div>
     );
   }
@@ -101,155 +164,3 @@ ScrollableTabsButtonForce.propTypes = {
 };
 
 export default withStyles(styles)(ScrollableTabsButtonForce);
-
-// import React from 'react';
-// import Button from '@material-ui/core/Button';
-// import Dialog from '@material-ui/core/Dialog';
-// import DialogContent from '@material-ui/core/DialogContent';
-// import DialogContentText from '@material-ui/core/DialogContentText';
-// import DialogTitle from '@material-ui/core/DialogTitle';
-// import './Buttons.css';
-
-// class ScrollDialog extends React.Component {
-//   state = {
-//     open: false,
-//     scroll: 'paper',
-//   };
-
-//   handleClickOpen = scroll => () => {
-//     this.setState({ open: true, scroll });
-//   };
-
-//   handleClose = () => {
-//     this.setState({ open: false });
-//   };
-
-//   render() {
-//     return (
-//         <div className="container">
-//             <div className="box">
-//         <Button id="button" onClick={this.handleClickOpen('paper')}><h2 className="category">Price<br></br>List</h2></Button>
-//         <Dialog
-//           open={this.state.open}
-//           onClose={this.handleClose}
-//           scroll={this.state.scroll}
-//           aria-labelledby="scroll-dialog-title"
-//         >
-//           <DialogTitle id="scroll-dialog-title">Subscribe</DialogTitle>
-//           <DialogContent>
-//             <DialogContentText>
-//               Cras mattis
-//             </DialogContentText>
-//           </DialogContent>
-//         </Dialog>
-//             </div>
-
-//             <div className="box">
-//          <Button id="button" onClick={this.handleClickOpen('paper')}><h2 className="category">Wellness<br></br>Programs</h2></Button>
-//         <Dialog
-//           open={this.state.open}
-//           onClose={this.handleClose}
-//           scroll={this.state.scroll}
-//           aria-labelledby="scroll-dialog-title"
-//         >
-//           <DialogTitle id="scroll-dialog-title">Subscribe</DialogTitle>
-//           <DialogContent>
-//             <DialogContentText>
-//               Cras mattis
-//             </DialogContentText>
-//           </DialogContent>
-//         </Dialog>
-//             </div>
-
-//             <div className="box">
-//          <Button id="button" onClick={this.handleClickOpen('paper')}><h2 className="category">Dental<br></br>Care</h2></Button>
-//          <Dialog
-//           open={this.state.open}
-//           onClose={this.handleClose}
-//           scroll={this.state.scroll}
-//           aria-labelledby="scroll-dialog-title"
-//         >
-//           <DialogTitle id="scroll-dialog-title">Subscribe</DialogTitle>
-//           <DialogContent>
-//             <DialogContentText>
-//               Cras mattis
-//             </DialogContentText>
-//           </DialogContent>
-//           </Dialog>
-//             </div>
-
-//             <div className="box">
-//          <Button id="button" onClick={this.handleClickOpen('paper')}><h2 className="category">Vaccinations &<br></br>Microchipping</h2></Button>
-//          <Dialog
-//           open={this.state.open}
-//           onClose={this.handleClose}
-//           scroll={this.state.scroll}
-//           aria-labelledby="scroll-dialog-title"
-//         >
-//           <DialogTitle id="scroll-dialog-title">Subscribe</DialogTitle>
-//           <DialogContent>
-//             <DialogContentText>
-//               Cras mattis
-//             </DialogContentText>
-//           </DialogContent>
-//         </Dialog>
-//             </div>
-
-//             <div className="box">
-//          <Button id="button" onClick={this.handleClickOpen('paper')}><h2 className="category">Radiology &<br></br>Ultrasound</h2></Button>
-//          <Dialog
-//           open={this.state.open}
-//           onClose={this.handleClose}
-//           scroll={this.state.scroll}
-//           aria-labelledby="scroll-dialog-title"
-//         >
-//           <DialogTitle id="scroll-dialog-title">Subscribe</DialogTitle>
-//           <DialogContent>
-//             <DialogContentText>
-//               Cras mattis
-//             </DialogContentText>
-//           </DialogContent>
-//         </Dialog>
-//             </div>
-
-
-//             <div className="box">
-//          <Button id="button" onClick={this.handleClickOpen('paper')}><h2 className="category">Internal<br></br>Medicine</h2></Button>
-//          <Dialog
-//           open={this.state.open}
-//           onClose={this.handleClose}
-//           scroll={this.state.scroll}
-//           aria-labelledby="scroll-dialog-title"
-//         >
-//           <DialogTitle id="scroll-dialog-title">Subscribe</DialogTitle>
-//           <DialogContent>
-//             <DialogContentText>
-//               Cras mattis
-//             </DialogContentText>
-//           </DialogContent>
-//         </Dialog>
-//             </div>
-
-
-//             <div className="box">
-//          <Button id="button" onClick={this.handleClickOpen('paper')}><h2 className="category">Surgical<br></br>Procedures</h2></Button>
-//          <Dialog
-//           open={this.state.open}
-//           onClose={this.handleClose}
-//           scroll={this.state.scroll}
-//           aria-labelledby="scroll-dialog-title"
-//         >
-//           <DialogTitle id="scroll-dialog-title">Subscribe</DialogTitle>
-//           <DialogContent>
-//             <DialogContentText>
-//               Cras mattis
-//             </DialogContentText>
-//           </DialogContent>
-//         </Dialog>
-//             </div>
-//         </div>
-//     );
-//   }
-// }
-
-// export default ScrollDialog;
