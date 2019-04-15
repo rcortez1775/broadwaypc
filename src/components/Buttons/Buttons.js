@@ -33,10 +33,13 @@ const styles = theme => ({
     fontFamily: 'Rajdhani, sans-serif',
     fontSize: '15px',
     backgroundColor: '#111111bb',
-    margin: '20px',
+    margin: 'auto',
+    marginBottom: '20px',
+    left: 0,
+    right: 0,
     padding: '20px',
-    width: '180px',
-    height: '180px',
+    width: '160px',
+    height: '160px',
     textAlign: 'center',
     boxSizing: 'borderbox',
   },
@@ -47,11 +50,15 @@ const styles = theme => ({
     flexDirection: 'row',
     justifyContent: 'spaceAround',
     flexFlow: 'wrap',
-    margin: 'auto',
   },
   price: {
     fontSize: '40px',
   },
+  dollar: {
+    fontSize: '20px',
+    top: 0,
+    verticalAlign: '15px',
+  }
 });
 
 class ScrollableTabsButtonForce extends React.Component {
@@ -90,59 +97,61 @@ class ScrollableTabsButtonForce extends React.Component {
         </AppBar>
         {value === 0 && <TabContainer>
             <div className={classes.container}>
-             <div className={classes.text}>
-             <h5>Phsyical Exam</h5>
-             <h2 className={classes.price}>$45</h2>
+
+            <div className={classes.text}>
+             <h3>Anal Gland Expression</h3>
+             <h2 className={classes.price}><span className={classes.dollar}>$</span>15</h2>
              </div>
 
              <div className={classes.text}>
-             <h5>DA2PP | Corona | Bordetella Booster | FVRCP Booster</h5>
-             <h2 className={classes.price}>$19</h2>
+             <h3>Rabies Vaccine</h3>
+             <h2 className={classes.price}><span className={classes.dollar}>$</span>18</h2>
              </div>
 
              <div className={classes.text}>
-             <h5>PFELV Booster</h5>
-             <h2 className={classes.price}>$22</h2>
+             <h3>DA2PP, Corona, Bordetella, FVRCP</h3>
+             <h2 className={classes.price}><span className={classes.dollar}>$</span>19</h2>
              </div>
 
              <div className={classes.text}>
-             <h5>Rabies Vaccine</h5>
-             <h2 className={classes.price}>$18</h2>
+             <h3>Nail Trim</h3>
+             <h2 className={classes.price}><span className={classes.dollar}>$</span>20</h2>
              </div>
 
              <div className={classes.text}>
-             <h5>In-House Blood work</h5>
-             <h2 className={classes.price}>$149</h2>
+             <h3>PFELV Booster</h3>
+             <h2 className={classes.price}><span className={classes.dollar}>$</span>22</h2>
              </div>
 
              <div className={classes.text}>
-             <h5>Radiographs</h5>
-             <h2 className={classes.price}>$100</h2>
+             <h3>Microchip</h3>
+             <h2 className={classes.price}><span className={classes.dollar}>$</span>30</h2>
              </div>
 
              <div className={classes.text}>
-             <h5>Ultrasound</h5>
-             <h2 className={classes.price}>$350</h2>
+             <h3>Phsyical Exam</h3>
+             <h2 className={classes.price}><span className={classes.dollar}>$</span>45</h2>
              </div>
 
              <div className={classes.text}>
-             <h5>Nail Trim</h5>
-             <h2 className={classes.price}>$20</h2>
+             <h3>Radiographs</h3>
+             <h2 className={classes.price}><span className={classes.dollar}>$</span>100</h2>
              </div>
 
              <div className={classes.text}>
-             <h5>Anal Gland Expression</h5>
-             <h2 className={classes.price}>$15</h2>
+             <h3>In-House Blood work</h3>
+             <h2 className={classes.price}><span className={classes.dollar}>$</span>149</h2>
              </div>
 
              <div className={classes.text}>
-             <h5>Microchip</h5>
-             <h2 className={classes.price}>$30</h2>
+             <h3>Dental</h3>
+             <h2 className={classes.price}><span className={classes.dollar}>$</span>199</h2>
              </div>
 
+
              <div className={classes.text}>
-             <h5>Dental</h5>
-             <h2 className={classes.price}>$199</h2>
+             <h3>Ultrasound</h3>
+             <h2 className={classes.price}><span className={classes.dollar}>$</span>350</h2>
              </div>
 
             </div>
