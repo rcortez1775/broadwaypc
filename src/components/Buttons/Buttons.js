@@ -5,6 +5,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
+// import dog1 from '../../images/dog1.jpg';
 
 function TabContainer(props) {
   return (
@@ -27,6 +28,7 @@ const styles = theme => ({
     backgroundColor: 'transparent !important',
     boxShadow: 'none',
     paddingTop: '80px',
+    color: '#F7F9FB',
   },
   text: {
     color: '#F7F9FB',
@@ -44,13 +46,12 @@ const styles = theme => ({
   },
   container: {
     width: '100%',
-    height: '525px',
+    height: '80%',
     marginTop: '120px',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'spaceAround',
     flexFlow: 'wrap',
-    overflowY: 'auto',
   },
   price: {
     fontSize: '40px',
@@ -59,6 +60,19 @@ const styles = theme => ({
     fontSize: '20px',
     top: 0,
     verticalAlign: '11px',
+  },
+  intro: {
+    textAlign: 'center',
+    marginTop: '120px',
+    fontFamily: 'Rajdhani, sans-serif',
+    padding: '10px',
+    color: '#F7F9FB',
+    fontSize: '16px',
+    width: '70%',
+    margin: 'auto',
+  },
+  hr: {
+      width: '50px',
   }
 });
 
@@ -157,7 +171,25 @@ class ScrollableTabsButtonForce extends React.Component {
 
             </div>
         </TabContainer>}
-        {value === 1 && <TabContainer>Item Two</TabContainer>}
+        {value === 1 && <TabContainer>
+            <div>
+                <div className={classes.intro}>
+                    <hr className={classes.hr} />
+                {/* <img src={dog1} alt="dog" className={classes.dog1}></img> */}
+                    <p>At Broadway Pet Clinic we firmly believe that getting your pet neutered/spayed is the best 
+                    option when considering his/her health! 
+                    We are now dedicating our time to service our existing clients, along with the City of 
+                    Long Beach and surrounding areas, to make these procedures more 
+                    affordable while still maintaining quality care.
+                    </p> 
+                    <p>Your pet will have a devoted team, from beginning to end, 
+                    monitoring your fur baby's progress throughout the procedure, ready to give kisses and hugs when they 
+                    wake from anesthesia!
+                    </p>
+                    <hr className={classes.hr} />
+                </div>
+            </div>
+            </TabContainer>}
         {value === 2 && <TabContainer>Item Three</TabContainer>}
         {value === 3 && <TabContainer>Item Four</TabContainer>}
         {value === 4 && <TabContainer>Item Five</TabContainer>}
