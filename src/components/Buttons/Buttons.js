@@ -63,11 +63,11 @@ const styles = theme => ({
   },
   intro: {
     textAlign: 'center',
-    marginTop: '120px',
+    marginTop: '130px',
     fontFamily: 'Rajdhani, sans-serif',
     padding: '10px',
     color: '#F7F9FB',
-    fontSize: '16px',
+    fontSize: '18px',
     width: '70%',
     margin: 'auto',
   },
@@ -98,7 +98,6 @@ class ScrollableTabsButtonForce extends React.Component {
             variant="scrollable"
             scrollButtons="on"
             indicatorColor="primary"
-            
           >
             <Tab label="Price List" />
             <Tab label="Spay/Neuter" />

@@ -10,14 +10,6 @@
     text-decoration: none;
 }
 
-.category { 
-    transition: all .2s ease-in-out; 
-}
-
-.category:hover { 
-    transform: scale(1.4);
-}
-
 @media screen and (max-width: 1200px) {
     .text {
         width: 40%;
