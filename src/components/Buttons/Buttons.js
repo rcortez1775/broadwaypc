@@ -55,6 +55,7 @@ const styles = theme => ({
   },
   price: {
     fontSize: '40px',
+    fontFamily: 'Roboto, sans-serif',
   },
   dollar: {
     fontSize: '20px',
