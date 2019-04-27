@@ -76,7 +76,10 @@ const styles = theme => ({
   },
   hr: {
       width: '50px',
-  }
+  },
+  tabContainer: {
+    top: '-500px',
+  },
 });
 
 class ScrollableTabsButtonForce extends React.Component {
@@ -112,7 +115,7 @@ class ScrollableTabsButtonForce extends React.Component {
             <Tab label="Surgery" />
           </Tabs>
         </AppBar>
-        {value === 0 && <TabContainer>
+        {value === 0 && <TabContainer >
             <div className={classes.container}>
 
             <div className={classes.text}>
