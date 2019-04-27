@@ -77,9 +77,6 @@ const styles = theme => ({
   hr: {
       width: '50px',
   },
-  tabContainer: {
-    top: '-500px',
-  },
 });
 
 class ScrollableTabsButtonForce extends React.Component {

@@ -3,6 +3,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    height: auto;
+    max-width: 100%;
 }
 
 .title {
