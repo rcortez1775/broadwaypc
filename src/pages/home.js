@@ -1,5 +1,5 @@
-import Services from "../components/Services/Services";
+import LandingPage from "../components/LandingPage/LandingPage";
 import React from "react";
 import App from '../App';
 
-export default () => <App><Services/></App>
+export default () => <App><LandingPage/></App>
