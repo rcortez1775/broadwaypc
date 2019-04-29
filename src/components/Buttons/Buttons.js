@@ -48,7 +48,7 @@ const styles = theme => ({
   },
   container: {
     width: '100%',
-    height: '80%',
+    height: '100%',
     marginTop: '120px',
     display: 'flex',
     flexDirection: 'row',
@@ -94,6 +94,7 @@ class ScrollableTabsButtonForce extends React.Component {
 
     return (
       <div className={classes.root}>
+      <div>
         <AppBar position="fixed" className={classes.transparentBar}>
           <Tabs
             value={value}
@@ -112,6 +113,8 @@ class ScrollableTabsButtonForce extends React.Component {
             <Tab label="Surgery" />
           </Tabs>
         </AppBar>
+        </div>
+        <div>
         {value === 0 && <TabContainer >
             <div className={classes.container}>
 
@@ -198,6 +201,7 @@ class ScrollableTabsButtonForce extends React.Component {
         {value === 5 && <TabContainer>Item Six</TabContainer>}
         {value === 6 && <TabContainer>Item Seven</TabContainer>}
         {value === 7 && <TabContainer>Item Seven</TabContainer>}
+        </div>
       </div>
     );
   }
