@@ -6,6 +6,7 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import Home from '@material-ui/icons/Home';
 import Call from '@material-ui/icons/Call';
 import Pets from '@material-ui/icons/Pets';
+import {Link} from 'react-router-dom';
 import SupervisedUserCircle from '@material-ui/icons/SupervisedUserCircle';
 import "./Navbar.css";
 
@@ -27,7 +28,6 @@ const styles = {
   
     handleChange = (event, value) => {
       this.setState({ value });
-      
     };
   
     render() {
@@ -37,8 +37,8 @@ const styles = {
   
       return (
         <BottomNavigation value={value} onChange={this.handleChange} className={classes.stickToBottom}>
-          <BottomNavigationAction label="Home" value="home" icon={<Home />} />
-          <BottomNavigationAction label="Services" value="favorites" icon={<Pets />} />
+          <Link to="/"><BottomNavigationAction label="Home" value="home" icon={<Home />} /></Link>
+          <Link to="/favorites"><BottomNavigationAction label="Services" value="favorites" icon={<Pets />} /></Link>
           <BottomNavigationAction label="Contact" value="call" icon={<Call />} />
           <BottomNavigationAction label="About Us" value="nearby" icon={<SupervisedUserCircle />} />
         </BottomNavigation>
