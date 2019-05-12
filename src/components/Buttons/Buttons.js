@@ -34,6 +34,7 @@ const styles = theme => ({
     fontFamily: 'Roboto, sans-serif',
     backgroundColor: '#F7F9FBbb',
     margin: 'auto',
+    marginTop: '20px',
     borderRadius: '100px',
     marginBottom: '20px',
     left: 0,

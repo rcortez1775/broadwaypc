@@ -1,8 +1,9 @@
 html {
-    background-image: url("../../images/bg2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  background: url("../../images/bg.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .intro {
@@ -12,7 +13,9 @@ html {
 
 .title {
     font-family: 'Rajdhani', sans-serif;
-    color: #F7F9FB !important;
+    color: #f7f9fb !important;
+    margin: auto;
+    font-size: 40px !important;
 }
 
 .addy {
@@ -22,10 +25,14 @@ html {
 }
 
 .image {
-    width: 270px;
-    margin-top: 50px;
+    width: 180px;
+    margin-top: 150px;
     border-radius: 100%;
     box-shadow: '0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)';
+}
+
+.titleContainer {
+  margin-top: 25px;
 }
   
 .bounce-top {

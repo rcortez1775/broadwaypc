@@ -8,12 +8,11 @@ class LandingPage extends Component {
     render() {
         return(
             <div className="intro">
-                
-                    <img className="image bounce-top" src={logo} alt="Logo" />
-                
                 <div>
-                    <p className="title text-focus-in">BROADWAY PET CLINIC 
-                        <br></br> 
+                    <img className="image bounce-top" src={logo} alt="Logo" />
+                </div>
+                <div className="titleContainer">
+                    <p className="title text-focus-in">BROADWAY PET CLINIC
                         <p className="addy">1058 E. Broadway Long Beach, CA 90802<br />562.432.1413</p>
                     </p>
                 </div>

@@ -1,12 +1,3 @@
-body {
-    background-image: url("../../images/bg2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: auto;
-    max-width: 100%;
-}
-
 .title {
   font-family: 'Rajdhani', sans-serif;
   color: #111111;

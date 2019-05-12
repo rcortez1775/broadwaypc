@@ -2,12 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
-import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import Home from '@material-ui/icons/Home';
-import Call from '@material-ui/icons/Call';
-import Pets from '@material-ui/icons/Pets';
 import {Link} from 'react-router-dom';
-import SupervisedUserCircle from '@material-ui/icons/SupervisedUserCircle';
 import "./Navbar.css";
 
 
@@ -16,9 +11,16 @@ const styles = {
     stickToBottom: {
         width: '100%',
         position: 'fixed',
-        bottom: 0,
-        backgroundColor: '#F7F9FB',
+        margin: 'auto',
+        top: '5px',
+        background: 'transparent !important',
+        fontFamily: 'Roboto, sans-serif',
       },
+    link: {
+      padding: '15px',
+      textDecoration: 'none',
+      color: '#3A4750',
+    },
   };
   
   class LabelBottomNavigation extends React.Component {
@@ -37,10 +39,10 @@ const styles = {
   
       return (
         <BottomNavigation value={value} onChange={this.handleChange} className={classes.stickToBottom}>
-          <Link to="/"><BottomNavigationAction label="Home" value="home" icon={<Home />} /></Link>
-          <Link to="/favorites"><BottomNavigationAction label="Services" value="favorites" icon={<Pets />} /></Link>
-          <BottomNavigationAction label="Contact" value="call" icon={<Call />} />
-          <BottomNavigationAction label="About Us" value="nearby" icon={<SupervisedUserCircle />} />
+          <Link to="/" className={classes.link}>Home</Link>
+          <Link to="/favorites" className={classes.link}>Services</Link>
+          <Link to="/Contact" className={classes.link}>Contact Us</Link>
+          <Link to="/AboutUs" className={classes.link}>About Us</Link>
         </BottomNavigation>
       );
     }
