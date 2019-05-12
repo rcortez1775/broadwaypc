@@ -14,12 +14,13 @@ const styles = {
         margin: 'auto',
         top: '5px',
         background: 'transparent !important',
-        fontFamily: 'Roboto, sans-serif',
+        fontFamily: 'PT Sans Narrow, sans-serif',
+        overflow: 'hidden',
       },
     link: {
       padding: '15px',
       textDecoration: 'none',
-      color: '#3A4750',
+      color: '#F7F9FB',
     },
   };
   

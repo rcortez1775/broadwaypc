@@ -1,9 +1,5 @@
 html {
-  background: url("../../images/bg.jpeg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: #212025;
 }
 
 .intro {
@@ -12,14 +8,15 @@ html {
 }
 
 .title {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
     color: #f7f9fb !important;
     margin: auto;
     font-size: 40px !important;
+    letter-spacing: 3px;
 }
 
 .addy {
-    font-family: 'Rajdhani', sans-serif; 
+    font-family: 'PT Sans Narrow', sans-serif; 
     color: #F7F9FB;
     font-size: 17px;
 }
