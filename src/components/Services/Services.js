@@ -1,14 +1,23 @@
 import { Component } from "react";
 import React from 'react';
 import './Services.css';
-import Button from '../Buttons/Buttons';
 
 
 class Services extends Component {
     render() {
         return(
             <div>
-                <Button />
+                <div className="servicesContainer">
+                    <h1 className="services">Our Services</h1>
+                </div>
+
+                <div className="card">
+                    <h1>Price List</h1>
+                </div>
+
+                <div className="card">
+                    <p>waddup</p>
+                </div>
             </div>
         )
     }
