@@ -8,15 +8,7 @@ class Services extends Component {
         return(
             <div>
                 <div className="servicesContainer">
-                    <h1 className="services">Our Services</h1>
-                </div>
-
-                <div className="card">
-                    <h1>Price List</h1>
-                </div>
-
-                <div className="card">
-                    <p>waddup</p>
+                    <p className="services">OUR SERVICES</p>
                 </div>
             </div>
         )

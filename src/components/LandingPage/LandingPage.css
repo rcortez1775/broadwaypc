@@ -1,5 +1,5 @@
 html {
-  background-color: #212025;
+  background-color: #D6D0C2;
 }
 
 .intro {
@@ -9,7 +9,7 @@ html {
 
 .title {
     font-family: 'PT Sans Narrow', sans-serif;
-    color: #f7f9fb !important;
+    color: #212025 !important;
     margin: auto;
     font-size: 40px !important;
     letter-spacing: 3px;
@@ -17,7 +17,7 @@ html {
 
 .addy {
     font-family: 'PT Sans Narrow', sans-serif; 
-    color: #F7F9FB;
+    color: #212025;
     font-size: 17px;
 }
 
