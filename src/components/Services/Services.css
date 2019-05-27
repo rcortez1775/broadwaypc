@@ -7,4 +7,31 @@
   letter-spacing: 3px;
 }
 
+.pricesCont {
+  margin: auto;
+  width: 90%;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
 
+.dog1 {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.serviceTitle {
+  font-size: 20px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: #212025;
+  letter-spacing: 3px;
+}
+
+.next{
+  width: 25px;
+  padding-right: 10px;
+  margin-bottom: -5px;
+}
+
+.listItem {
+  font-weight: bold;
+}
