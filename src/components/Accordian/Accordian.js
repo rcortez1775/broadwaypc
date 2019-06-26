@@ -10,16 +10,12 @@ const useStyles = makeStyles(theme => ({
   root: {
     width: '90%',
     margin: 'auto',
-    background: "#f0f0f000",
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),
     flexBasis: '33.33%',
     flexShrink: 0,
-  },
-  secondaryHeading: {
-    fontSize: theme.typography.pxToRem(15),
-    color: theme.palette.text.secondary,
+    backgroundColor: "#f0f0f000",
   },
 }));
 

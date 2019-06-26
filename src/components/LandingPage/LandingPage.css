@@ -13,12 +13,13 @@ html {
     margin: auto;
     font-size: 40px !important;
     letter-spacing: 3px;
+    margin-bottom: -65px;
 }
 
 .addy {
     font-family: 'PT Sans Narrow', sans-serif; 
     color: #212025;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .image {
