@@ -11,6 +11,7 @@ class LandingPage extends Component {
                 <div>
                     <img className="image bounce-top" src={logo} alt="Logo" />
                 </div>
+        
                 <div className="titleContainer">
                     <p className="title text-focus-in">BROADWAY PET CLINIC
                         <p className="addy">1058 E. Broadway Long Beach, CA 90802<br />562.432.1413</p>

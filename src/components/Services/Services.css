@@ -13,12 +13,6 @@
   font-family: 'PT Sans Narrow', sans-serif;
 }
 
-.dog1 {
-  width: 100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .serviceTitle {
   font-size: 20px;
   font-family: 'PT Sans Narrow', sans-serif;
@@ -35,4 +29,5 @@
 
 .listItem {
   font-weight: bold;
+  font-size: 20px;
 }
