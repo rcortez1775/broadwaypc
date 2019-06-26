@@ -12,11 +12,17 @@ const useStyles = makeStyles(theme => ({
     margin: 'auto',
   },
   heading: {
-    fontSize: theme.typography.pxToRem(15),
-    flexBasis: '33.33%',
+    fontSize: theme.typography.pxToRem(17),
+    flexBasis: '50%',
     flexShrink: 0,
     backgroundColor: "#f0f0f000",
+    textAlign: 'left',
+    display: 'inline',
+    fontFamily: 'PT Sans Narrow, sans-serif',
   },
+  accordian: {
+    margin: '20px',
+  }
 }));
 
 function ControlledExpansionPanels() {
@@ -29,7 +35,7 @@ function ControlledExpansionPanels() {
 
   return (
     <div className={classes.root}>
-      <ExpansionPanel expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+      <ExpansionPanel className={classes.accordian} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1bh-content"
@@ -44,7 +50,7 @@ function ControlledExpansionPanels() {
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
-      <ExpansionPanel expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+      <ExpansionPanel className={classes.accordian} expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2bh-content"
@@ -59,7 +65,7 @@ function ControlledExpansionPanels() {
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
-      <ExpansionPanel expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+      <ExpansionPanel className={classes.accordian} expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3bh-content"
@@ -74,7 +80,7 @@ function ControlledExpansionPanels() {
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
-      <ExpansionPanel expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+      <ExpansionPanel className={classes.accordian} expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel4bh-content"
@@ -89,7 +95,7 @@ function ControlledExpansionPanels() {
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
-      <ExpansionPanel expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+      <ExpansionPanel className={classes.accordian} expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1bh-content"
@@ -104,7 +110,7 @@ function ControlledExpansionPanels() {
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
-      <ExpansionPanel expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
+      <ExpansionPanel className={classes.accordian} expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1bh-content"
@@ -119,7 +125,7 @@ function ControlledExpansionPanels() {
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
-      <ExpansionPanel expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
+      <ExpansionPanel className={classes.accordian} expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1bh-content"
