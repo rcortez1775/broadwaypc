@@ -21,8 +21,14 @@ const useStyles = makeStyles(theme => ({
     fontFamily: 'PT Sans Narrow, sans-serif',
   },
   accordian: {
-    margin: '20px',
-  }
+    margin: '15px',
+    fontFamily: 'PT Sans Narrow, sans-serif',
+  },
+  body: {
+    fontSize: '15px',
+    width: '80%',
+    margin: 'auto',
+  },
 }));
 
 function ControlledExpansionPanels() {
@@ -135,8 +141,19 @@ function ControlledExpansionPanels() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget
-            maximus est, id dignissim quam.
+          <p className={classes.body}>Our Clinic is well equipped  to perform different surgical procedures on dogs, cats and rabbits. 
+                        We tailor our anesthetic protocol and quality monitoring techniques to the 
+                        individual animal need. So, your pet will not have a "one size fits all" surgery. We offer both 
+                        elective and corrective procedures, anything from spay/neuter and dental to mass and stone removal.</p> 
+                    <p className={classes.body}> Anesthesia - no matter how safe - does carry a risk of slowing the heart rate and respiration. 
+                        This is a rare occurrence but it carries potentially fatal consequences. 
+                        The key to preventing such an occurrence is early detection. At Broadway Pet Clinic, 
+                        we use a six-parameter monitoring system as well as a vet tech whose sole purpose 
+                        is to manually monitor the vital signs of every patient in our operating room. 
+                        After surgery, each patient is carefully monitored until full recovery from the 
+                        anesthesia. Due to our extensive anesthesia monitoring protocol, the staff at 
+                        Broadway Pet Clinic can proudly say we have never had an anesthesia-related 
+                        fatality in the seven years the practice has been open.</p>    
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
