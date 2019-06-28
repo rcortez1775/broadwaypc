@@ -1,19 +1,24 @@
 import React from 'react';
+import './Accordian.css';
 import { makeStyles } from '@material-ui/core/styles';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import heart from '../../images/heart.png';
 
 const useStyles = makeStyles(theme => ({
   root: {
     width: '90%',
     margin: 'auto',
+    backgroundColor: '#ffffffe8',
+    boxShadow: '0 0 10px 10px #ffffffe8;',
+    padding: '20px',
   },
   heading: {
     fontSize: theme.typography.pxToRem(17),
-    flexBasis: '50%',
+    flexBasis: '80%',
     flexShrink: 0,
     backgroundColor: "#f0f0f000",
     textAlign: 'left',
@@ -26,7 +31,6 @@ const useStyles = makeStyles(theme => ({
   },
   body: {
     fontSize: '15px',
-    width: '80%',
     margin: 'auto',
   },
 }));
@@ -47,7 +51,7 @@ function ControlledExpansionPanels() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography className={classes.heading}>Price list of Services</Typography>
+          <Typography className={classes.heading}><img className="heart" src={heart} alt="heart" />Price list of Services</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
@@ -62,7 +66,7 @@ function ControlledExpansionPanels() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography className={classes.heading}>Wellness Programs</Typography>
+          <Typography className={classes.heading}><img className="heart" src={heart} alt="heart" />Wellness Programs</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
@@ -77,7 +81,7 @@ function ControlledExpansionPanels() {
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
-          <Typography className={classes.heading}>Dental Care</Typography>
+          <Typography className={classes.heading}><img className="heart" src={heart} alt="heart" />Dental Care</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
@@ -92,7 +96,7 @@ function ControlledExpansionPanels() {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography className={classes.heading}>Vaccinations/Microchipping</Typography>
+          <Typography className={classes.heading}><img className="heart" src={heart} alt="heart" />Vaccinations/Microchipping</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
@@ -107,7 +111,7 @@ function ControlledExpansionPanels() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography className={classes.heading}>Radiology/Ultrasound</Typography>
+          <Typography className={classes.heading}><img className="heart" src={heart} alt="heart" />Radiology/Ultrasound</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
@@ -122,7 +126,7 @@ function ControlledExpansionPanels() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography className={classes.heading}>Internal Medicine</Typography>
+          <Typography className={classes.heading}><img className="heart" src={heart} alt="heart" />Internal Medicine</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
@@ -137,7 +141,7 @@ function ControlledExpansionPanels() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography className={classes.heading}>Surgery</Typography>
+          <Typography className={classes.heading}><img className="heart" src={heart} alt="heart" />Surgery</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
