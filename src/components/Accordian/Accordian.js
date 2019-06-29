@@ -6,7 +6,14 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import heart from '../../images/heart.png';
+import priceList from '../../images/priceList.png';
+import wellness from '../../images/wellness.png';
+import tooth from '../../images/tooth.png';
+import vaccine from '../../images/vaccine.png';
+import xray from '../../images/xray.png';
+import pills from '../../images/pills.png';
+import surgery from '../../images/surgery.png';
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -27,7 +34,6 @@ const useStyles = makeStyles(theme => ({
   },
   accordian: {
     margin: '15px',
-    fontFamily: 'PT Sans Narrow, sans-serif',
   },
   body: {
     fontSize: '15px',
@@ -51,7 +57,7 @@ function ControlledExpansionPanels() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography className={classes.heading}><img className="heart" src={heart} alt="heart" />Price list of Services</Typography>
+          <Typography className={classes.heading}><img className="heart" src={priceList} alt="heart" />Price list of Services</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
@@ -66,7 +72,7 @@ function ControlledExpansionPanels() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography className={classes.heading}><img className="heart" src={heart} alt="heart" />Wellness Programs</Typography>
+          <Typography className={classes.heading}><img className="heart" src={wellness} alt="wellness" />Wellness Programs</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
@@ -81,7 +87,7 @@ function ControlledExpansionPanels() {
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
-          <Typography className={classes.heading}><img className="heart" src={heart} alt="heart" />Dental Care</Typography>
+          <Typography className={classes.heading}><img className="heart" src={tooth} alt="tooth" />Dental Care</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
@@ -96,7 +102,7 @@ function ControlledExpansionPanels() {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography className={classes.heading}><img className="heart" src={heart} alt="heart" />Vaccinations/Microchipping</Typography>
+          <Typography className={classes.heading}><img className="heart" src={vaccine} alt="vaccine" />Vaccinations/Microchipping</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
@@ -111,7 +117,7 @@ function ControlledExpansionPanels() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography className={classes.heading}><img className="heart" src={heart} alt="heart" />Radiology/Ultrasound</Typography>
+          <Typography className={classes.heading}><img className="heart" src={xray} alt="xray" />Radiology/Ultrasound</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
@@ -126,7 +132,7 @@ function ControlledExpansionPanels() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography className={classes.heading}><img className="heart" src={heart} alt="heart" />Internal Medicine</Typography>
+          <Typography className={classes.heading}><img className="heart" src={pills} alt="pills" />Internal Medicine</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
@@ -141,7 +147,7 @@ function ControlledExpansionPanels() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography className={classes.heading}><img className="heart" src={heart} alt="heart" />Surgery</Typography>
+          <Typography className={classes.heading}><img className="heart" src={surgery} alt="surgery" />Surgery</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>

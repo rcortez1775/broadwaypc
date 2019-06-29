@@ -34,7 +34,8 @@ html {
     width: 180px;
     margin-top: 150px;
     border-radius: 100%;
-    box-shadow: '0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)';
+    /* box-shadow: 0 0 30px 30px #000000;
+    background-color: #000000; */
 }
 
 .titleContainer {
