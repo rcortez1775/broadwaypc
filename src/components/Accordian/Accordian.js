@@ -17,7 +17,7 @@ import surgery from '../../images/surgery.png';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    width: '90%',
+    width: '100%',
     margin: 'auto',
     backgroundColor: '#ffffffe8',
     boxShadow: '0 0 10px 10px #ffffffe8;',
@@ -61,8 +61,26 @@ function ControlledExpansionPanels() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget
-            maximus est, id dignissim quam.
+          <ul>
+                        <li>Physical exam - $45</li>
+                        <li>In-house blood work - $149</li>
+                        <li>Nail Trim - $20</li>
+                        <li>Anal Gland Expression - $15</li>
+                        <li>Microchip - $30</li>
+                        <li>Ultrasound - $350</li>
+                        <p className="listItem">Radiographs:</p>
+                        <li>First View - $100</li>
+                        <li>Additional View - $45</li>
+                        <p className="listItem">Vaccines:</p>
+                        <li>DA2PP -$19</li>
+                        <li>Corona - $19</li>
+                        <li>Bordetella Booster - $19</li>
+                        <li>FVRCP Booster - $19</li>
+                        <li>FELV Booster - $22</li>
+                        <li>Rabies Vaccine - $18</li>
+                        <p className="listItem">Dental:</p>
+                        <li>Starting at $199(not including extractions/special circumstances)</li>
+                    </ul>
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
@@ -76,8 +94,17 @@ function ControlledExpansionPanels() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus, varius pulvinar
-            diam eros in elit. Pellentesque convallis laoreet laoreet.
+          <p className={classes.body}>At Broadway Pet Clinic, we promote a program of total animal health and wellness. 
+                        This means that we are trying to lead our clients away from the reactive treatment 
+                        that is a result of disease and help our patients stop the life-shortening diseases 
+                        that are often realized too late in life. The solution is to provide yearly 
+                        examinations and blood testing on all animals over seven years of age.</p>
+                    <p className={classes.body}>In an examination, the doctor will assess the physical health of an animal; 
+                        however, this is not the whole picture. There is a wealth of information 
+                        that can be gathered from a simple blood profile. Providing annual vaccinations 
+                        in addition to these examinations can significantly increase the chances of 
+                        early detection of disease, and therefore increase the possibility of 
+                        successful treatment of these maladies.</p>   
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
@@ -91,8 +118,25 @@ function ControlledExpansionPanels() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
-            vitae egestas augue. Duis vel est augue.
+          <p className={classes.body}>Dental Hygiene is a major concern for us in our lives. 
+                        If we do not care for our mouths, they become infected 
+                        and have diseases such as cavities and gingivitis. Imagine 
+                        if we brushed only once a month, or never! How badly would 
+                        our mouths smell? And when we get a cavity or fracture a 
+                        tooth, we go to the dentist that day.</p>
+                    <p className={classes.body}>On average, 85% of animals over age four have some form of 
+                        periodontal disease. This is the most common type of 
+                        disease in an animal's mouth, and the most painful in ours. 
+                        However, there is a solution.</p>    
+                    <p className={classes.body}>The solution is a yearly dental exam. Relax; this exam comes free 
+                        when you come in for your pets yearly physical and/or vaccines. 
+                        The dental exam is performed by one of our doctors who can explain 
+                        the problems and risks associated with a neglected mouth. After the 
+                        exam, the doctor will make a treatment recommendation based on the 
+                        findings and a number of other factors that will affect your pet's health.</p>
+                    <p className={classes.body}>Treatment recommendations may range from a simple brushing 
+                        at home to a professional dental cleaning followed by 
+                        aggressive in-home treatment.</p>    
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
@@ -106,8 +150,10 @@ function ControlledExpansionPanels() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
-            vitae egestas augue. Duis vel est augue.
+          <p className={classes.body}>Regular vaccines make for a happy and healthy pet. We offer both vaccines 
+                        and microchipping at our facility. Our microchip company of choice is Save 
+                        This Life which doesn't require any annual fees for registration and also 
+                        allows your pet to be Googled! </p>
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
@@ -121,8 +167,12 @@ function ControlledExpansionPanels() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget
-            maximus est, id dignissim quam.
+          <p className={classes.body}>From time to time it becomes necessary to see a picture of the inside 
+                        of an animal. This could be for any number of reasons; a broken bone, 
+                        foreign object in the stomach, labored breathing, etc.</p>
+                    <p className={classes.body}>For this purpose, we feature a fully functional Board Certified radiology department including 
+                        Digital Radiography and Ultrasound. These are very valuable diagnostic 
+                        tools for any quality veterinary practice to use to immediately assess a situation.</p> 
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
@@ -136,8 +186,13 @@ function ControlledExpansionPanels() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget
-            maximus est, id dignissim quam.
+          <p className={classes.body}>Our very knowledgeable and experienced clinicians are competent in the prevention, 
+                        diagnosis, and treatment of a variety of disorders and diseases that effect the body 
+                        in numerous areas such as neurology, oncology and cardiology. Our innovative 
+                        instrumentation and techniques along with current advances in veterinary care 
+                        enable us to provide therapeutic treatment of your pet's specific condition.</p>
+                    <p className={classes.body}>At our clinic, we take a different approach to healing. 
+                        We provide the highest quality of service in medicine.</p>
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>

@@ -1,6 +1,10 @@
 .heart {
-    width: 20px;
+    width: 25px;
     display: inline-block;
     padding-right: 10px;
     margin-bottom: -5px;
+}
+
+li {
+    font-size: 10px;
 }
