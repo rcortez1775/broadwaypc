@@ -39,6 +39,25 @@ const useStyles = makeStyles(theme => ({
     fontSize: '15px',
     margin: 'auto',
   },
+  divBox: {
+    width: '300px',
+    height: '200px',
+    marginBottom: '10px',
+    marginRight: '10px',
+    margin: 'auto',
+    boxSizing: 'borderBox',
+    padding: '-10px',
+  },
+  container: {
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'spaceAround',
+    flexFlow: 'wrap',
+  },
+  listItem: {
+    textAlign: 'center',
+  },
 }));
 
 function ControlledExpansionPanels() {
@@ -61,26 +80,34 @@ function ControlledExpansionPanels() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-          <ul>
-                        <li>Physical exam - $45</li>
-                        <li>In-house blood work - $149</li>
-                        <li>Nail Trim - $20</li>
-                        <li>Anal Gland Expression - $15</li>
-                        <li>Microchip - $30</li>
-                        <li>Ultrasound - $350</li>
-                        <p className="listItem">Radiographs:</p>
-                        <li>First View - $100</li>
-                        <li>Additional View - $45</li>
-                        <p className="listItem">Vaccines:</p>
-                        <li>DA2PP -$19</li>
-                        <li>Corona - $19</li>
-                        <li>Bordetella Booster - $19</li>
-                        <li>FVRCP Booster - $19</li>
-                        <li>FELV Booster - $22</li>
-                        <li>Rabies Vaccine - $18</li>
-                        <p className="listItem">Dental:</p>
-                        <li>Starting at $199(not including extractions/special circumstances)</li>
-                    </ul>
+            <div className={classes.container}>
+                <div className={classes.divBox}>
+                    <li>Physical exam - $45</li>
+                    <li>In-house blood work - $149</li>
+                    <li>Nail Trim - $20</li>
+                    <li>Anal Gland Expression - $15</li>
+                    <li>Microchip - $30</li>
+                    <li>Ultrasound - $350</li>
+                </div>           
+                <div className={classes.divBox}> 
+                    <span className="listItem">Radiographs:</span>
+                    <li>First View - $100</li>
+                    <li>Additional View - $45</li>
+                </div>
+                <div className={classes.divBox}>
+                    <span className="listItem">Vaccines:</span>
+                    <li>DA2PP -$19</li>
+                    <li>Corona - $19</li>
+                    <li>Bordetella Booster - $19</li>
+                    <li>FVRCP Booster - $19</li>
+                    <li>FELV Booster - $22</li>
+                    <li>Rabies Vaccine - $18</li>
+                </div>
+                <div className={classes.divBox}>
+                    <span className="listItem">Dental:</span>
+                    <li>Starting at $199(not including extractions/special circumstances)</li>
+                </div>
+            </div>    
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
